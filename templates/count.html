@@ -1,0 +1,13 @@
+<h1>There are {{ count }} words. </h1>
+
+<!-- {{ fulltext }} -->
+<a href='{% url "home" %}'  >Back</a>
+and the word count is:<br>
+{% for words,count in wordcount %}
+{{ words }}
+<br/>
+{{ count }}
+<br>
+
+{% endfor %}
+
